@@ -116,3 +116,10 @@ Create a PHP accessor to run on your webserver. This accessor will open a connec
 	
 You can now consume this JSON data in your javascript to filter it with crossfilter and illustrate it with D3.
 
+#### Shortcut
+If you want to avoid the whole business of setting up PHP, creating a database or using R to prepare your files, there is a pre-prepared data file called "data/HQ_MSPB/testdata.json".
+
+This will avoid having to use the CDC Zip-FIPS cross walk files etc.
+
+
+
