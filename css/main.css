@@ -1,0 +1,87 @@
+/*** choropleth heat map styles */
+#state-borders {
+fill:none;
+stroke:#fff;
+stroke-width:2.0px;
+stroke-linejoin:round;
+stroke-linecap:round;
+pointer-events:none;
+}
+.counties {
+fill: #555;
+stroke: #C0C0C0;
+stroke-linejoin: round;
+}
+/*** Ordinal Quantized Color Scale */
+.q0 { fill:#000000; }
+.q1 { fill:#C5F4C8; }
+.q2 { fill:#BCECBF; }
+.q3 { fill:#B4E3B6; }
+.q4 { fill:#ABDBAE; }
+.q5 { fill:#A2D2A5; }
+.q6 { fill:#9ACA9C; }
+.q7 { fill:#91C194; }
+.q8 { fill:#88B98B; }
+.q9 { fill:#80B082; }
+.q10{ fill:#77A87A; }
+.q11{ fill:#6EA071; }
+.q12{ fill:#669768; }
+.q13{ fill:#5D8F5F; }
+.q14{ fill:#548657; }
+.q15{ fill:#4C7E4E; }
+.q16{ fill:#437545; }
+.q17{ fill:#3A6D3D; }
+.q18{ fill:#326434; }
+.q19{ fill:#295C2B; }
+
+
+/*** d3-tip styles */
+.d3-tip {
+line-height: 1.5;
+padding: 8px;
+background: rgba(0, 0, 0, 0.8);
+color: #fff;
+border-radius: 0px;
+text-align: center;
+}    
+.d3-tip:after {
+box-sizing:border-box;
+display:inline;
+font-size:10px;
+width:100%;
+line-height:1;
+color:rgba(0,0,0,0.8);
+content:"\25BC";
+position:absolute;
+text-align:center;
+}
+.d3-tip.n:after {
+top:100%;
+left:0;
+margin:-1px 0 0;
+}
+/*** histogram styles */
+.axis {
+shape-rendering: crispEdges;
+}
+.axis line {
+stroke: #fff;
+}
+.axis path {
+display: none;
+}
+.axis text {
+font-family: sans-serif;
+font-size: 10px
+}
+.axis label {
+font-family: sans-serif;
+font-size: 10px;
+}
+/* D3 brush */
+.brush .extent {
+    stroke: #222;
+    fill-opacity: .125;
+    shape-rendering: crispEdges;
+}
+
