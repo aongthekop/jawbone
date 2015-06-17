@@ -1,0 +1,68 @@
+    
+
+d3.json("data/cfilt-steps.json", function(d) {
+
+    d.forEach(function(d) {
+        parseDate = d3.time.format("%Y-%m-%d").parse;
+        d.date = parseDate(d.date); d.value = +d.value;
+        });
+
+    margin      = {top:5, right:5, bottom: 40, left:5},
+    height      = 150 - margin.top - margin.bottom, 
+    width       = 500 - margin.left - margin.right, 
+    barPadding  = 1;
+
+    steps    = crossfilter(d),
+    monthdim = steps.dimension(function(d){ thisDate = new Date(d.date); return thisDate.getMonth(); }),
+    monthgrp = monthdim.group().reduceSum(function(d){ return d.value; });
+    daydim   = steps.dimension(function(d){ thisDate = new Date(d.date); return thisDate.getDay(); }),
+    daygrp   = daydim.group().reduceSum( function(d) { return d.value; });
+
+    monthYscale = d3.scale.linear()
+            .domain([0, d3.max(monthgrp.all(), function(d){return d.value;})])
+            .range([height, 5]);
+
+    stepColor = d3.scale.threshold()
+            .domain([100, 150, 200, 250, 300, 400, 500])
+            .range(["#E3E3E3", "#D0DFD2", "#C3DABC", "#BDCB87", "#CAB44E", "#E29517", "#FF6600"]);
+
+    d3.select("#monthly-steps-previous-selector")
+            .on("click", function(d) {reDraw(monthgrp.all(), monthYscale); })   
+
+    d3.select("#monthly-steps-next-selector")
+            .on("click", function(d) {reDraw(daygrp.all(), monthYscale); })    
+
+    svg = d3.select("#steps-bar")
+            .append("svg:svg")
+            .attr("width", width)
+            .attr("height", height)
+
+    svg.selectAll("rect")
+            .data(monthgrp.all())
+            .enter().append("rect")
+            .attr("x", function(d,i){ return i * width / monthgrp.size(); })
+            .attr("y", function(d){ return monthYscale(d.value); })
+            .attr("width", width / monthgrp.size() - barPadding)
+            .attr("height", function(d) { return height - monthYscale(d.value); })
+            .attr("fill", function(d){ return stepColor(d.value/2000); })
+
+    function reDraw(data, scale) {
+      
+        svg.transition()
+            .duration(1500)
+            .data(data)
+            .attr("x", function(d,i){ return i * width / data.length; })
+            .attr("y", function(d,i){ return scale(d.value); })
+            .attr("width", width / data.length - barPadding)
+            .attr("height", function(d) { return height - scale(d.value); })
+            .attr("fill", function(d){ return stepColor(d.value/2000); })
+        } 
+
+
+
+});
+
+
+
+
+

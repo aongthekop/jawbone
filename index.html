@@ -3,119 +3,114 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" lang=""> <!--<![endif]-->
-    <head>
-        <meta charset="utf-8">
-        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-        <title>MSPB</title>
-
-        <meta name="description" content="An Avera Health Clinical Intelligence Special Project to evaluate data from Centers for Medicare & Medicaid Services (CMS) on Medicare Spend Per Beneficiciary (MSPB). The project makes use of D3.js and Crossfilter.js." >
-
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-
-
-        <link rel="stylesheet" href="css/bootstrap.min.css">
-        <style>
-            body {
-                padding-top: 50px;
-                padding-bottom: 20px;
-            }
-        </style>
-
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <title>Quantize Me</title>
+    <meta name="description" content="A data visualization and exploration of JawBone Up24 data.">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <style>
+        body {
+            padding-top: 50px;
+            padding-bottom: 20px;
+        }
+    </style>
     <!-- Bootstrap Core CSS -->
     <link rel="stylesheet" href="css/bootstrap-theme.min.css">
-   
     <!-- Custom scrolling CSS -->
     <link rel="stylesheet" href="css/scrolling-nav.css">
-
     <!-- Default CSS from HTML5BoilerPlace -->
     <link rel="stylesheet" href="css/main.css">
-
-    <!-- Legacy Browser handler/shim -->
+    <!-- Legacy Browser shim -->
     <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <!-- D3 Heatmap CSS -->>
+    <link rel="stylesheet" href="css/cal-heatmap.css">
+</head>
 
+<body>
+<!--[if lt IE 8]>
+<p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+<![endif]-->
 
-
-
-    </head>
-    <body>
-        <!--[if lt IE 8]>
-            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
-        <![endif]-->
-
-    <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
-      <div class="container">
-          <div class="navbar-header">
-           <h4 style="color:white">  
-          <IMG SRC="img/Avera Transparent Logo.png">
-          Clinical Intelligence Special Projects</h4>
-            
+<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+           <h4 style="color:white">Quantize ME!</h4>
         </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          
-            
-        </div>
-      </div>
-    </nav>
+        <div id="navbar" class="navbar-collapse collapse"> </div>
+    </div>
+</nav>
  
-<!-- Main jumbotron for a primary marketing message or call to action -->
+<!-- Main jumbotron for call to action -->
 
 <div class="container">
-<div class="jumbotron"> 
-    <h2>US Hospital MSPB 2013</h2>
-    <P>Centers for Medicare & Medicaid Services (CMS), Medicare Spend Per Beneficiary (MSPB) for hospitals participating in the Prospective Payment System (PPS).</p>
-
-    <P>
-    <a class="btn btn-primary btn-lg page-scroll" role="button" href="#about">Learn more &raquo;</a>
-    <a class="btn btn-primary btn-lg page-scroll" role="button" href="#methodology">Methodology &raquo;</a>
-    </p>
-    
-</div> 
-
-
-</div> 
-<div class="container" id="histogram"> </div>
-
-<div class="container" id="choropleth"> </div>
-
-<section id="about" class="about-section">
-    <div class="container">
+    <div class="jumbotron">
         <div class="row">
-            <div class="row col-md-5">
-            <IMG SRC="img/cmslogo.png" align="left" vspace="10" hspace="20">
-            <h4>About MSPB</h4>
+        </div>
+    </div> 
+</div> 
 
-            <P>This data set describes what US hospitals are charging for treating Medicare patients. MSPB aims to evaluate hospitals’ efficiency, as reflected by Medicare payments made during an MSPB episode, relative to the efficiency of the median hospital. The performance period is January 1, 2013 through December 31, 2013 </P>
 
- <P>An MSPB episode includes all Medicare Part A and Part B claims paid during the period from 3 days prior to a hospital admission through 30 days after discharge.</P>
-</div>
-<div class="row col-md-1">&nbsp;</div>
-<div class="row col-md-5">
-<p>A hospital’s MSPB Measure is calculated as the hospital’s average MSPB Amount divided by the
-median MSPB Amount across all hospitals, where a hospital’s MSPB Amount is the hospital’s average price-standardized, risk-adjusted spending for an MSPB episode.</p>
-<P> Payment amounts are price-standardized to remove the effect of geographic payment differences and addon payments for indirect medical education (IME) and disproportionate share hospitals (DSH). In addition, the MSPB Measure is risk adjusted to account for beneficiary age and severity of illness.</P>
-
-                    </div>
+<section class="streams-section" id="streams">
+    <div class="container">
+    <div class="row>">
+            <div id="streamgraph-steps"> </div> 
+            <div id="streamgraph-sleep"> </div> 
+    </div>
     </div>
 </section>
 
+<section class="steps-section">
+    <div class="container"> 
+    <div class="row">
 
+        <div class="row col-md-7"  id="steps">
+            <button id="steps-previous-selector" style="margin-bottom: 10px;">&laquo;</button>
+            <button id="steps-next-selector" style="margin-bottom: 10px;">&raquo;</button>
+            &nbsp;Daily Steps
+        </div>
 
-<section id="methodology" class="methods-section">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-12">
-            <h4>Methodology</h4>
-            <p>The methods used to create this visualization are described in the project <a href="README.md">README.md</a> file. It includes descriptions of data sources, steps and scripts for data preparation. Source code is available on the <a href="https://github.com/nyquist212/CMSMSPB">GitHub</a> repository.
-            </div>
+        <div class="row col-md-5"  id="steps-bar">
+             <button id="monthly-steps-previous-selector" style="margin-bottom: 10px;">&laquo; Monthly</button>
+             <button id="monthly-steps-next-selector" style="margin-bottom: 10px;">Daily &raquo;</button>
+             &nbsp;Step Total<br/>
+        </div> 
+
+        <div class = "row">
+            <div class="row col-md-12" align="left" id="steps-horizon"> </div>
         </div>
     </div>
+    </div>
 </section>
 
+<section class="sleep-section">
+    <div class="container">
+    <div class = "row">
+
+        <div class="row col-md-7" id="sleep">
+            <button id="sleep-previous-selector" style="margin-bottom: 10px;">&laquo;</button>
+            <button id="sleep-next-selector" style="margin-bottom: 10px;">&raquo;</button>
+            &nbsp;Sleep Minutes
+        </div>
+
+        <div class="row col-md-5" align="left" id="sleep-bar"> 
+            <button id="monthly-sleep-previous-selector" style="margin-bottom: 10px;">&laquo; Monthly</button>
+            <button id="monthly-sleep-next-selector" style="margin-bottom: 10px;">Daily &raquo;</button>
+            &nbsp;Sleep Total<br/>
+        </div>
+        
+        <div class = "row">
+            <div class= "row col-md 12" id="sleep-horizon"></div>
+        </div>
+
+    </div>
+    </div>
+</section>
 
 
 <hr>
       
-</div>
 
 <footer>
     <p>&copy; Avera Health 2015 | <a href="http://colinwhite.net">Colin A. White</a></p>
@@ -129,8 +124,15 @@ median MSPB Amount across all hospitals, where a hospital’s MSPB Amount is the
     <script src="js/d3/d3.min.js"></script>
     <script src="js/d3/d3.tip.js"></script>
     <script src="js/d3/queue.v1.min.js"></script>
-    <script src="js/d3/topojson.v1.min.js"></script>
-    <script src="js/drawCharts.js"></script>
+    <!-- <script src="js/d3/topojson.v1.min.js"></script> -->
+    <script src="js/d3/cal-heatmap.min.js"></script>
+    <script src="js/d3/horizon.js"></script>
+    <script src="js/drawCal-Heatmaps.js"></script>
+    <script src="js/drawCfiltBar-steps.js"></script>
+    <script src="js/drawHorizon-steps.js"></script> 
+    <script src="js/drawHorizon-sleep.js"></script>
+    <script src="js/drawStream.js"></script>  
+
     <!-- 
     <script src="js/ChordMapper.js"></script>
     <script src="js/drawChordDiagram.js"></script>
