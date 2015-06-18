@@ -70,11 +70,14 @@ d3.json("data/cfilt-steps.json", function(d) {
     width       = 500 - margin.left - margin.right; 
     barPadding  = 1;
 
-        svg_steps.selectAll("rect.bars").remove();
-        
         svg_steps.selectAll("rect.bars")
-        .data(data)
-        .enter().append("rect")
+        
+        svg_steps.transition().duration(500);
+
+        svg_steps.selectAll("rect.bars")
+            .data(data)
+            
+        svg_steps
         .attr("class", "bars")
         .attr("x", function(d,i){ return i * width / data.length; })
         .attr("y", function(d){ return scale(d.value); })

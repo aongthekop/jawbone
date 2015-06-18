@@ -55,8 +55,8 @@
 <section class="streams-section" id="streams">
     <div class="container">
     <div class="row>">
-            <div id="streamgraph-steps"> </div> 
-            <div id="streamgraph-sleep"> </div> 
+            <div id="stream-steps"> </div> 
+            <div id="stream-sleep"> </div> 
     </div>
     </div>
 </section>
@@ -72,13 +72,13 @@
         </div>
 
         <div class="row col-md-5"  id="steps-bar">
-             <button id="monthly-steps-previous-selector" style="margin-bottom: 10px;">&laquo; Monthly</button>
-             <button id="monthly-steps-next-selector" style="margin-bottom: 10px;">Daily &raquo;</button>
+             <button id="monthly-steps-selector" style="margin-bottom: 10px;">&laquo; Monthly</button>
+             <button id="daily-steps-selector" style="margin-bottom: 10px;">Daily &raquo;</button>
              &nbsp;Step Total<br/>
         </div> 
 
         <div class = "row">
-            <div class="row col-md-12" align="left" id="steps-horizon"> </div>
+            <div class="row col-md-12" align="left" id="horizon-steps"> </div>
         </div>
     </div>
     </div>
@@ -101,7 +101,7 @@
         </div>
         
         <div class = "row">
-            <div class= "row col-md 12" id="sleep-horizon"></div>
+            <div class= "row col-md 12" id="horizon-sleep"></div>
         </div>
 
     </div>
@@ -127,25 +127,32 @@
     <!-- <script src="js/d3/topojson.v1.min.js"></script> -->
     <script src="js/d3/cal-heatmap.min.js"></script>
     <script src="js/d3/horizon.js"></script>
+    <script src="js/drawCfiltBar-steps.js"></script> 
+    <script src="js/main.js"></script>
+
+    
+
+    <!-- 
     <script src="js/drawCal-Heatmaps.js"></script>
-    <script src="js/drawCfiltBar-steps.js"></script>
+   
     <script src="js/drawHorizon-steps.js"></script> 
     <script src="js/drawHorizon-sleep.js"></script>
     <script src="js/drawStream.js"></script>  
 
-    <!-- 
     <script src="js/ChordMapper.js"></script>
     <script src="js/drawChordDiagram.js"></script>
     <script src="js/readmissions.js"></script>
     -->
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-    <script>
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+        <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
         function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
         e=o.createElement(i);r=o.getElementsByTagName(i)[0];
         e.src='//www.google-analytics.com/analytics.js';
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-2319503-2','auto');ga('send','pageview');
-    </script>   
+        </script>   
+    -->
+
 </body>
 </html>

@@ -8,8 +8,8 @@
         w = 960,
         h = 40,
         duration = 0;
-
-/*    var color = d3.scale.linear()
+/*
+    var color = d3.scale.linear()
         .domain([-1, 0, 0, 1])
         .range(["#08519c", "#bdd7e7", "#bae4b3", "#006d2c"]);
 */

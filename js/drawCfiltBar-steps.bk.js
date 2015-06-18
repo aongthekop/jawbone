@@ -69,7 +69,7 @@ d3.json("data/cfilt-steps.json", function(d) {
 
 });
 
-
+/*
 d3.json("data/cfilt-sleep.json", function(d) {
 
         margin  = {top:5, right:5, bottom: 50, left:5},
@@ -130,3 +130,5 @@ d3.json("data/cfilt-sleep.json", function(d) {
             .html(function(d){ return monthNames[d.key].substring(0,1); })
 
 });
+
+*/
