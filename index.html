@@ -36,21 +36,12 @@
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
     <div class="container">
         <div class="navbar-header">
-           <h4 style="color:white">Quantize ME!</h4>
+           <h2 style="color:white">Data Visualization of JawBoneUP Data</h2>
         </div>
         <div id="navbar" class="navbar-collapse collapse"> </div>
     </div>
 </nav>
  
-<!-- Main jumbotron for call to action -->
-
-<div class="container">
-    <div class="jumbotron">
-        <div class="row">
-        </div>
-    </div> 
-</div> 
-
 
 <section class="streams-section" id="streams">
     <div class="container">
@@ -95,8 +86,8 @@
         </div>
 
         <div class="row col-md-5" align="left" id="sleep-bar"> 
-            <button id="monthly-sleep-previous-selector" style="margin-bottom: 10px;">&laquo; Monthly</button>
-            <button id="monthly-sleep-next-selector" style="margin-bottom: 10px;">Daily &raquo;</button>
+            <button id="monthly-sleep-selector" style="margin-bottom: 10px;">&laquo; Monthly</button>
+            <button id="daily-sleep-selector" style="margin-bottom: 10px;">Daily &raquo;</button>
             &nbsp;Sleep Total<br/>
         </div>
         
@@ -105,6 +96,502 @@
         </div>
 
     </div>
+    </div>
+</section>
+
+
+<section class="commentary-section">
+    <div class="container">
+
+        <div class="row">
+<div class="row col-md-4" id="sleep">
+    <img src="img/IMG_0432.PNG" width="50%" height="50%" align="left" hspace="20" vspace="20">
+    <img src="img/IMG_0076.PNG" width="50%" height="50%" align="left" hspace="20" vspace="20">
+    <img src="img/IMG_0529.PNG" width="50%" height="50%" align="left" hspace="20" vspace="20">
+    <img src="img/JBScreenshot.PNG" width="90%" height="90%" align="left" hspace="20" vspace="20">  
+</div>
+
+<div class="row col-md-8" id="sleep">
+        <div class="commentary text">            
+               
+            <P>What originally drew me to the UP back in 2013, was the offer of access to my own data. I was hoping to get sensor data. The actual discrete time stamped measurements from the accelerometer and the stop watch. Instead what I got was daily aggregations. I suspect Jawbone retain the meta data from the phone app like geotags,  network details etc.</P>
+
+            <P>Downloading the aggregated data from the website involves finding link buried at the bottom of the Accounts section of the User Profile page.</P>
+
+            <P>Interpreting the column headings required some hunting around the Jawbone Support Forums. These community Forums have since disappeared form the Jawbone website. So the table below may be the only data dictionary still floating around the internet!</P>
+
+            <P>It to have been deciphered by an enthusiastic user rather than an official spec from Jawbone. I’d link to the forum post and credit the user but I couldn’t find them even in Google Cache.</P>
+
+            <P>Essentially, this is what’s available in the CSV files.</P>
+
+<table cellpadding="0" cellspacing="0" class="c15" style="margin-right: auto; border-collapse: collapse;">
+	<tbody>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c11" style="vertical-align: baseline; font-size: 8pt; font-weight: bold;">Column name</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c11" style="vertical-align: baseline; font-size: 8pt; font-weight: bold;">Type</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c11" style="vertical-align: baseline; font-size: 8pt; font-weight: bold;">Description</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">e_calcium</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">meal</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">calcium content in milligrams</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">e_calories</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">meal</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">energy content in kcal</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">e_carbs</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">meal</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">carbohydrates content in grams</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">e_cholesterol</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">meal</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">cholesterol content in milligrams</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">e_fiber</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">meal</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">fiber content in grams</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">e_protein</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">meal</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">protein content in grams</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">e_sat_fat</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">meal</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">saturated fat content in grams</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">e_sodium</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">meal</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">sodium content in milligrams</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">e_sugar</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">meal</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">sugar content in grams</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">e_unsat_fat</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">meal</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">unsaturated fat (monounsaturated + polyunsaturated) content in grams</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">m_active_time</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">movement</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">total number of seconds the user has been moving</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">m_calories</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">movement</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">total number of calories burned in the day</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">m_distance</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">movement</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">total distance in meters</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">m_lcat</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">movement</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">longest consecutive active time in seconds</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">m_lcit</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">movement</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">longest consecutive idle time in seconds</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">m_steps</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">movement</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">total number of steps in the day</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">m_workout_count</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">movement</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">number of workouts in the day</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">m_workout_time</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">movement</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">total number of seconds the user has workedout</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">o_count</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">mood</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">number of workouts in the day</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">o_mood</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">mood</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">total sum of mood ratings in the day</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">s_asleep_time</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">sleep</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">number of minutes, since previous midnight, when the user fell asleep (first time the user fell into light or sleep mode).</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">s_awake</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">sleep</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">seconds the user was awake</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">s_awake_time</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">sleep</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">number of minutes, since previous midnight, when the user woke up (either the band was taken out of sleep mode, or the beginning of the last awake period)</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">s_awakenings</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">sleep</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">number of times the user woke up</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">s_bedtime</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">sleep</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">number of minutes, since previous midnight, when the user set the band into sleep mode</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">s_deep</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">sleep</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">number of seconds the user was in deep sleep</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">s_duration</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">sleep</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">total number of seconds the user slept</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">s_light</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">sleep</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">number of seconds the user was in light sleep</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">s_quality</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">sleep</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">quality score (0-100)</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">n_asleep_time</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">nap</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">number of minutes, since previous midnight, when the user fell asleep (first time the user fell into light or sleep mode).</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">n_awake</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">nap</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">seconds the user was awake</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">n_awake_time</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">nap</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">number of minutes, since previous midnight, when the user woke up (either the band was taken out of sleep mode, or the beginning of the last awake period)</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">n_awakenings</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">nap</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">number of times the user woke up</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">n_bedtime</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">nap</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">number of minutes, since previous midnight, when the user set the band into sleep mode</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">n_deep</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">nap</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">number of seconds the user was in deep sleep</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">n_duration</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">nap</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">total number of seconds the user slept</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">n_light</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">nap</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">number of seconds the user was in light sleep</span></p>
+			</td>
+		</tr>
+		<tr class="c2" style="height: 0pt;">
+			<td class="c1" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 98.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">n_quality</span></p>
+			</td>
+			<td class="c0" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 70.5pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">nap</span></p>
+			</td>
+			<td class="c4" colspan="1" rowspan="1" style="border: 0pt solid rgb(0, 0, 0); width: 335.2pt; padding: 5pt; vertical-align: top; background-color: rgb(204, 204, 204);">
+			<p class="c6" style="font-size: 11pt; margin: 0px; font-family: Arial; line-height: 1.15; padding-top: 0pt; direction: ltr; padding-bottom: 0pt;"><span class="c3" style="vertical-align: baseline; font-size: 8pt;">quality score (0-100)</span></p>
+			</td>
+		</tr>
+	</tbody>
+</table>
+
+
+
+
+<P>I chose to explore this data visually with D3.js and Crossfilter.js. You could just have easily done the same in MS Excel or Google Sheets.</P>
+
+<P>My experience suggests my band's distance estimates are off by about +20% when running. Consequently, this overestimates the speed (mph) calculations performed by the app. It’s true, I could calibrate it to my own running cadence and stride. I didn’t.</P>
+
+<P>Given what I know about my own Basal Metabolic Rate (BMR) and Total Energy Expenditure (TEE), I assume the calorie expenditure estimates to be equally flattering (about 15% over estimated).</P>
+
+<P>I believe the band assumes approximately 2,000 steps per mile. This would be consistent with prevailing average estimates. Hence, the further you are from “average” height and weight, the higher your margin of error.</P>
+
+<P>If you’re an athletic outlier (skinny distance runner or a stocky body builder) these measurements are not useful for improving performance. If you’re “average” (overweight and inactive) you’ll get more accurate measurements out of the box. Which I suppose says a lot about who this was designed for.</P>
+
+<P>In performing this simple visual exploration, I was unable to learn anything I didn’t already know.
+<UL>
+    <LI>I’m more active on the weekends. Not a surprise given my desk job.
+    <LI>I sleep better at the weekends. Not a surprise given I’m more active.
+        <LI>I appear to be more active in the warmer months. Not a surprise given I live in SD.
+            <LI>I’m not close to the mean. Not a surprise given my heritage and genetics.
+</UL>
+No unexpected patterns emerged. No ah-ha moments. In fact, I suspect I was happier during the missing data periods when I wasn’t wearing a band to obsessively measure my runs, workouts, sleep, vitals, macronutrients etc.</P>
+
+<P>I’ve owned at least six UP bands (if not eight). To be honest, I've lost count. None lasted beyond the 90 day warranty period and all except the first were replacements. While the customer service has been excellent the durability of the hardware was disappointing. This reflects heavily in the data and what you can do with it.</P>
+
+<P>Replacement bands typically take 2-3 weeks to arrive, explaining the lengthy gaps in the illustrations. My apparently choppy performance (wide swings from the mean in the horizon charts) is a device reliability issue rather than inconsistent lifestyle choices or behavior patterns.</P>
+
+<P>The UP band is unlikely to have any long lasting impact on my overall fitness, health or wellbeing. I’m pretty confident in saying, it won’t improve my Quality Adjusted Life Years. At best, the inactivity warnings remind me how much of a sedentary slob I can be.</P>
+
+<P>If you've had better luck with your Jawbone UP and are interested in trying this analysis for yourself, my source code can be found on the Github repository.</P>
+
+
+        </div>
+        </div>
+        </div>
     </div>
 </section>
 
@@ -124,26 +611,11 @@
     <script src="js/d3/d3.min.js"></script>
     <script src="js/d3/d3.tip.js"></script>
     <script src="js/d3/queue.v1.min.js"></script>
-    <!-- <script src="js/d3/topojson.v1.min.js"></script> -->
     <script src="js/d3/cal-heatmap.min.js"></script>
     <script src="js/d3/horizon.js"></script>
-    <script src="js/drawCfiltBar-steps.js"></script> 
     <script src="js/main.js"></script>
 
-    
-
-    <!-- 
-    <script src="js/drawCal-Heatmaps.js"></script>
-   
-    <script src="js/drawHorizon-steps.js"></script> 
-    <script src="js/drawHorizon-sleep.js"></script>
-    <script src="js/drawStream.js"></script>  
-
-    <script src="js/ChordMapper.js"></script>
-    <script src="js/drawChordDiagram.js"></script>
-    <script src="js/readmissions.js"></script>
-    -->
-    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. 
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID.  -->
         <script>
         (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
         function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
@@ -152,7 +624,6 @@
         r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
         ga('create','UA-2319503-2','auto');ga('send','pageview');
         </script>   
-    -->
 
 </body>
 </html>
